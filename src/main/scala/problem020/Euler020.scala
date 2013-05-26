@@ -9,9 +9,22 @@ package problem020
  * Find the sum of the digits in the number 100! 
  */
 
-object Euler020 {
 
-  def main(args: Array[String]): Unit = { println("Result is ") }
+object Euler020 {
+  
+  def factorial(n: BigInt): BigInt = {
+    def fact(n: BigInt, acc: BigInt): BigInt = if (n <= 1) acc else fact(n - 1, n * acc)
+    fact(n, 1)
+  }
+
+  def sumOfDigits(n: BigInt): BigInt = {
+    def sum(n: BigInt, acc: BigInt): BigInt = if (n < 10) acc + n else sum(n / 10, acc + (n % 10))
+    sum(n, 0)
+  }
+
+  def factorialDigitSum(n: BigInt): BigInt = sumOfDigits(factorial(n))
+
+  def main(args: Array[String]): Unit = { println("Result is " + factorialDigitSum(100) ) }
 
 }
 	
