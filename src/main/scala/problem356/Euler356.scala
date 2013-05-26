@@ -1,0 +1,18 @@
+
+package problem356
+
+/* 
+ * Largest roots of cubic polynomials
+ * 
+ * Let an be the largest real root of a polynomial g(x) = x3 - 2n·x2 + n.
+ * For example, a2 = 3.86619826...
+ * Find the last eight digits of.
+ * Note:  represents the floor function. 
+ */
+
+object Euler356 {
+
+  def main(args: Array[String]): Unit = { println("Result is ") }
+
+}
+	
