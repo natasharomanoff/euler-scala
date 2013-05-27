@@ -3,7 +3,7 @@
 
 
 The Fibonacci sequence is defined by the recurrence relation:
-Fn = Fn1 + Fn2, where F1 = 1 and F2 = 1.
+F(n) = F(n-1) + F(n-2), where F1 = 1 and F2 = 1.
 
 Hence the first 12 terms will be:
 
